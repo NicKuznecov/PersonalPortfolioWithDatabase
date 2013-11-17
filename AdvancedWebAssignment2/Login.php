@@ -6,7 +6,7 @@ File Description: Login Page to gain access to the Business Contacts Page.
 -->
 
 <?php
-$page = "Home";
+$page = "Login";
 
 include('header.php');
 

@@ -6,7 +6,7 @@ File Description: Business Contacts page of personal portfolio website.
 -->
 
 <?php
-$page = "Home";
+$page = "BusinessContacts";
 
 include('header.php');
 
