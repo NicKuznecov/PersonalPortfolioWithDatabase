@@ -10,13 +10,18 @@ $page = "Home";
 
 include('header.php');
 
+		echo '<form method="post" action="">
+			Username: <input type="text" name="user_name" /></br>
+			Password: <input type="password" name="user_pass"></br>
+			<input type="submit" value="Log In" />
+                      </form>';
 ?>
     
 <?php
 include('sideContent.php');
 ?>
 
-
+    
 <?php
 include('mainContent.php');
 ?>
