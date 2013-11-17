@@ -49,5 +49,6 @@ File Description: Header page which consists of the nav menu, and css/js include
             <a id="Services" class="item" href="Services.php">Services</a> 
             <a class="item" href="https://github.com/NicKuznecov"> Git Hub</a> 
             <a id="ContactMe" class="item" href="ContactMe.php">Contact Me</a>
+            <a id="BusinessContacts" class="item" href="BusinessContacts.php">Business Contacts</a>
         </div>
         <div id="content">
