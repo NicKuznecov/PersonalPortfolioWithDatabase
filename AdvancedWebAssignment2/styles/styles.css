@@ -1,0 +1,133 @@
+/* 
+    Document   : styles
+    Created on : 5-Sep-2013, 11:29:54 AM
+    Author     : Nick
+    Description:
+        Style sheet for divs, footer, header, and navbar.
+*/
+body
+{
+    
+    background: url(../images/backgroundImage.jpg) top center no-repeat;     
+ /*   margin: 0;
+    padding: 0; */
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+#logo{
+    
+    position: relative;
+    top: -5px;
+    left: -435px;
+    margin-right: auto;
+    margin-left: auto;
+    background: url(../images/logo.png) top center no-repeat;
+    width: 180px;
+    height: 160px;
+}
+
+
+
+#content{
+    
+    position: relative;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    background-color: lightgray;
+    top: -1px;
+    border: 1px solid black;
+    width: 1000px;
+    height: 700px;
+    line-height: 300%;
+    padding: 25px;
+ 
+   
+}
+#content p
+{
+    width:575px
+    
+    
+}
+#sideContent
+{
+    position: absolute;
+    clear: both;
+    left: 650px;
+    top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 750px;
+    background-color: lightgray;
+   
+        
+}
+
+#sideContent p
+{
+    width: 350px;
+    padding: 25px;
+}
+
+#sideContent
+
+
+#wrapper {
+    
+        top: 10px;
+        position: relative;
+        font-size: 100%;
+    
+    
+}
+#menu {	
+	position: relative;
+        clear: both;				
+	top: -1px;
+        background-image: url(../images/MenuBarBackground.png);
+        height: 50px;
+        background-position: center;
+	line-height: 300%;
+        width: 1052px;
+        margin-left: auto;
+        margin-right: auto;
+        
+} 
+#menu a:hover {
+	background-color: #574DD8;
+}
+#menu a:visited:active  {
+        background-color: #2419B2;
+}
+.item {
+	position: relative;
+        background-color: #00728B;
+	border: 1px solid #032472;
+	color: #FFF;
+	font-family: Arial;
+	padding: 3px;
+	text-decoration: none;
+        left: 20px;
+}
+#footer{
+        
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        bottom: 60px;
+        
+        
+}
+
+
+
+
+#featured{
+    
+    padding: 25px;
+    
+}

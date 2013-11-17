@@ -1,0 +1,85 @@
+/* 
+    Document   : styles
+    Created on : 30-Oct-2013, 2:31:25 PM
+    Author     : Nick
+    Description: Styles for mobile.php
+        
+*/
+
+root { 
+    display: block;
+}
+
+#full {
+    text-align: center;
+}
+
+body {
+    
+    font-family: 'PT Serif Caption', serif; 
+    
+    
+}
+
+#resume {
+    text-align: center;
+}
+
+#logo {
+        text-align: center;
+        width: 100%;
+        display: inline;
+}
+
+.ui-content p
+{
+          text-indent: 1.5em;
+          margin-bottom: 1em;
+}
+
+#navbar
+{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+
+#header
+{
+    margin: 0.3em 10% 0.8em !important;
+    text-align: center;
+}
+
+#navButtons
+{
+    font-size: px;
+}
+
+
+#featured{
+    
+    padding: 25px;
+    
+}
+
+#images
+{
+    margin: 0;
+    padding: 0;
+}
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
