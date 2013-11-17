@@ -9,6 +9,19 @@ File Description: Business Contacts page of personal portfolio website.
 $page = "Home";
 
 include('header.php');
+
+
+if($_SESSION['signed_in'] == false)
+{
+	//the user is not signed in
+	?>
+         <script type="text/javascript">;
+         alert("Sorry, you have to be signed in to view the Business Contacts page.");
+         history.back();
+         </script>;  
+        <?php
+        
+}
 ?>
 
 

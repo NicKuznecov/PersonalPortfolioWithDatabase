@@ -9,9 +9,8 @@ File Description: Login Page to gain access to the Business Contacts Page.
 $page = "Home";
 
 include('header.php');
+
 ?>
-
-
     
 <?php
 include('sideContent.php');
