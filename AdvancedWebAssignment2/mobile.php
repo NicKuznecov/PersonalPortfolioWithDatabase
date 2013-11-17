@@ -76,6 +76,11 @@ File Description: Mobile Page of the Personal Portfolio Website
                         </a>
                     </li>
                     <li>
+                        <a href="#Login" data-transition="fade" data-theme="a" data-icon="plus">
+                            Login
+                        </a>
+                    </li>                    
+                    <li>
                         <a href="#page1" data-transition="fade" data-theme="a" data-icon="back" data-rel="back">
                             Back
                         </a>
@@ -155,6 +160,11 @@ File Description: Mobile Page of the Personal Portfolio Website
                         </a>
                     </li>
                     <li>
+                        <a href="#Login" data-transition="fade" data-theme="a" data-icon="plus">
+                            Login
+                        </a>
+                    </li>                    
+                    <li>
                         <a href="#page1" data-transition="fade" data-theme="a" data-icon="back" data-rel="back">
                             Back
                         </a>
@@ -225,6 +235,11 @@ File Description: Mobile Page of the Personal Portfolio Website
                         </a>
                     </li>
                     <li>
+                        <a href="#Login" data-transition="fade" data-theme="a" data-icon="plus">
+                            Login
+                        </a>
+                    </li>                    
+                    <li>
                         <a href="#page1" data-transition="fade" data-theme="a" data-icon="back" data-rel="back">
                             Back
                         </a>
@@ -292,6 +307,11 @@ File Description: Mobile Page of the Personal Portfolio Website
                             Business Contacts
                         </a>
                     </li>
+                    <li>
+                        <a href="#Login" data-transition="fade" data-theme="a" data-icon="plus">
+                            Login
+                        </a>
+                    </li>                    
                     <li>
                         <a href="#page1" data-transition="fade" data-theme="a" data-icon="back" data-rel="back">
                             Back
@@ -370,6 +390,11 @@ File Description: Mobile Page of the Personal Portfolio Website
                         </a>
                     </li>
                     <li>
+                        <a href="#Login" data-transition="fade" data-theme="a" data-icon="plus">
+                            Login
+                        </a>
+                    </li> 
+                    <li>
                         <a href="#page1" data-transition="fade" data-theme="a" data-icon="back" data-rel="back">
                             Back
                         </a>
@@ -434,6 +459,11 @@ File Description: Mobile Page of the Personal Portfolio Website
                     <li>
                         <a href="#BusinessContacts" data-transition="fade" data-theme="a" data-icon="info">
                             Business Contacts
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Login" data-transition="fade" data-theme="a" data-icon="plus">
+                            Login
                         </a>
                     </li>
                     <li>
