@@ -495,6 +495,78 @@ File Description: Mobile Page of the Personal Portfolio Website
             <!-- END OF FOOTER -->
         </div>
         <!-- END OF BUSINESS CONTACTS PAGE -->
+        <!-- START OF LOGIN PAGE -->
+        <div data-role="page" id="Login">
+            <div data-theme="a" data-role="header">
+                <img id="logo" src="images/logo.png" alt="Logo" /> 
+                <div id="header">
+                <h3>Personal Portfolio</h3>
+                </div>
+            </div>
+            <!-- NAVBAR -->
+            <div data-role="navbar" data-iconpos="top">
+                <ul>
+                    <li>
+                        <a href="#Home" data-transition="fade" data-theme="a" data-icon="home">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#About" data-transition="fade" data-theme="a" data-icon="grid">
+                            About Me
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Contact" data-transition="fade" data-theme="a" data-icon="edit">
+                            Contact Me
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#BusinessContacts" data-transition="fade" data-theme="a" data-icon="info">
+                            Business Contacts
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Login" data-transition="fade" data-theme="a" data-icon="plus">
+                            Login
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page1" data-transition="fade" data-theme="a" data-icon="back" data-rel="back">
+                            Back
+                        </a>
+                    </li>
+                </ul>
+             </div>
+            <!-- END OF NAVBAR -->
+            <!-- START OF CONTENT -->
+            <div data-role="content">
+            <div id ="content">
+	
+                <?php
+                echo '<form method="post" action="">
+			Username: <input type="text" name="user_name" /></br>
+			Password: <input type="password" name="user_pass"></br>
+			<input type="submit" value="Log In" />
+                      </form>';
+                ?>
+            </div>
+            </div>
+            <!-- END OF CONTENT -->
+            <!-- START OF FOOTER -->
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    Copyright © 2013
+                </h3>
+                <div id ="full">
+                    <a href="http://webdesign4.georgianc.on.ca/~200231116/Project1/Home.php" data-transition="fade" rel="external">
+                        Full Site
+                    </a>
+                </div>
+            </div>
+            <!-- END OF FOOTER -->
+        </div>
+        <!-- END OF LOGIN PAGE -->
         <script defer src="javascript/jquery.flexslider.js"></script>
 
         <script type="text/javascript">
