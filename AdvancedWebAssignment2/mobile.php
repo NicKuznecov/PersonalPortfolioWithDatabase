@@ -41,7 +41,7 @@ File Description: Mobile Page of the Personal Portfolio Website
   <script src="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script> 
   <!-- Extra Codiqa features -->
   <script src="https://d10ajoocuyu32n.cloudfront.net/codiqa.ext.js"></script> 
-    
+  
 </head>
     <body>
         <!-- Home -->
@@ -477,8 +477,7 @@ File Description: Mobile Page of the Personal Portfolio Website
             <!-- START OF CONTENT -->
             <div data-role="content">
             <div id ="content">
-
-                </div>
+            </div>
             </div>
             <!-- END OF CONTENT -->
             <!-- START OF FOOTER -->
