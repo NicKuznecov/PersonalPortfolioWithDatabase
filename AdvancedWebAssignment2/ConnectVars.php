@@ -1,5 +1,5 @@
 <?php 
-session_start();
+
 
   define('DB_HOST', 'webdesign4.georgianc.on.ca');
   define('DB_USER', 'db200231116');      

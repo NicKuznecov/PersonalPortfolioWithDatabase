@@ -43,6 +43,7 @@ body
     height: 700px;
     line-height: 300%;
     padding: 25px;
+    border-radius: 50px;
  
    
 }
@@ -63,6 +64,7 @@ body
     width: 400px;
     height: 750px;
     background-color: lightgray;
+    border-radius: 50px;
    
         
 }

@@ -44,6 +44,8 @@ File Description: Mobile Page of the Personal Portfolio Website
   
 </head>
     <body>
+    <?php session_start() 
+    ?> 
         <!-- Home -->
         <div data-role="page" id="Home" >
             <div data-role="header" >
@@ -477,6 +479,31 @@ File Description: Mobile Page of the Personal Portfolio Website
             <!-- START OF CONTENT -->
             <div data-role="content">
             <div id ="content">
+            <?php
+            
+            include('ConnectVars.php');
+            
+            
+            $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+
+$query = "SELECT contact_name, contact_email, contact_address, contact_homePhone, contact_workPhone FROM BusinessContacts ORDER BY contact_name ASC";
+$data = mysqli_query($dbc, $query);
+
+    while ($row = mysqli_fetch_array($data))
+    {     
+        echo '<table>';
+        
+        echo '<tr><td class="label">Contact Name: ' . $row['contact_name'] . '</td></tr>';    
+        
+        echo '</table>';
+}
+
+  mysqli_close($dbc);
+            
+            
+            ?>
+            
+            
             </div>
             </div>
             <!-- END OF CONTENT -->
