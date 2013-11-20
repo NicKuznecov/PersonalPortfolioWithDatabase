@@ -12,7 +12,7 @@ include('header.php');
 ?>
 
 
-            <img src="images/resumeScreenshot.png" width="600px" height ="700px"/>   
+<a href="resume/Resume.pdf" target="_blank" ><img src="images/resumeScreenshot.png" width="500px" height ="600px"/></a> 
 
 <?php
 include('sideContent.php');

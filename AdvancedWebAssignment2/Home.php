@@ -11,17 +11,17 @@ $page = "Home";
 include('header.php');
 ?>
 
-            <h2>Hello, I'm Nick, a Programmer and Web Designer</h2>
+            <h2>Hello, I'm Nick, a Programmer.</h2>
             <h3>I create fast and elegant websites with sleek designs.</h3>
             
 
             <h1>Projects</h1>
             <div>
                 <div id="featured"> 
-                    <a href="http://webdesign4.georgianc.on.ca/~200231116/FinalProject/forumIndex.php" ><img src="images/websiteScreenshot.png" width="600" height="450" alt="Overflow: Hidden No More" /></a>
-                    <a href="http://webdesign4.georgianc.on.ca/~200231116/Project1/Home.php"><img src="images/website3Screenshot.png" width="600" height="450" alt="HTML Captions" /></a>
-                    <a href="http://github.com/NicKuznecov"><img src="images/languageFormScreenshot.png" width="600" height="450" alt="and more features" /></a>
-                    <a href="http://github.com/NicKuznecov"><img src="images/basicTranslator.png" width="600" height="450" alt="and more features"/></a>
+                    <a href="http://webdesign4.georgianc.on.ca/~200231116/FinalProject/forumIndex.php" ><img src="images/websiteScreenshot.png" width="500" height="350" alt="Overflow: Hidden No More" /></a>
+                    <a href="http://webdesign4.georgianc.on.ca/~200231116/Project1/Home.php"><img src="images/website3Screenshot.png" width="500" height="350" alt="HTML Captions" /></a>
+                    <a href="http://github.com/NicKuznecov"><img src="images/languageFormScreenshot.png" width="500" height="350" alt="and more features" /></a>
+                    <a href="http://github.com/NicKuznecov"><img src="images/basicTranslator.png" width="500" height="350" alt="and more features"/></a>
                 </div>
             </div>
     

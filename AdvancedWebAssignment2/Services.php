@@ -25,8 +25,8 @@ include('header.php');
 include('sideContent.php');
 ?>
                 <p></p>
-                <img src="images/cssImage" height="300px" width="350px" />
-                <img src="images/netbeansImage" height="300px" width="350px" />
+                <img src="images/cssImage" height="250px" width="300px" />
+                <img src="images/netbeansImage" height="250px" width="300px" />
 <?php
 include('mainContent.php');
 ?>

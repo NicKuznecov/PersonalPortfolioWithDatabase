@@ -9,7 +9,7 @@
 /* PUT IN YOUR SLIDER ID AND SIZE TO MAKE LOAD BEAUTIFULLY
    ================================================== */
 #featured { 
-	width: 370px;
+	width: 270px;
 	height: 250px;
 	background: #000 url('../orbit/loading.gif') no-repeat center center;
 	overflow: hidden; }

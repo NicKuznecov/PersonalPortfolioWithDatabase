@@ -19,9 +19,10 @@ include('header.php');
 <?php
 include('sideContent.php');
 ?>
-<a href="http://webdesign4.georgianc.on.ca/~200231116/FinalProject/forumIndex.php"> <img src="images/websiteScreenshot.png" alt="?" width="390" height="245" ></a>     
-<a href="http://webdesign4.georgianc.on.ca/~200231116/Project1/Home.php"> <img src="images/website3Screenshot.png" alt="?" width="390" height="245"></a>
-<a href=""> <img src="images/languageFormScreenshot.png" alt="?" width="390" height="210"></a>
+<h1>Project Images</h1>
+<a href="http://webdesign4.georgianc.on.ca/~200231116/FinalProject/forumIndex.php"> <img src="images/websiteScreenshot.png" alt="?" width="340" height="220" ></a>     
+<a href="http://webdesign4.georgianc.on.ca/~200231116/Project1/Home.php"> <img src="images/website3Screenshot.png" alt="?" width="340" height="220"></a>
+<a href=""> <img src="images/languageFormScreenshot.png" alt="?" width="340" height="220"></a>
 <?php
 include('mainContent.php');
 ?>
