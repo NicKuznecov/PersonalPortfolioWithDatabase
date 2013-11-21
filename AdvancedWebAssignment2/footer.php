@@ -15,6 +15,5 @@ File Description: footer of the Personal Portfolio web-site, includes the copyri
             $('#featured').orbit();
         });
     </script>
-
 </body>   
 </html>

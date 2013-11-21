@@ -41,6 +41,7 @@ File Description: Header page which consists of the nav menu, and css/js include
 <body>  
     <div id="logo">
     </div>
+<div id="Content">    
     <div id="wrapper">
         <div id="menu">
             <a id="Home" class="item" href="Home.php">Home</a> 
@@ -53,4 +54,4 @@ File Description: Header page which consists of the nav menu, and css/js include
             <a id="Login" class="item" href="Login.php">Login</a>
         </div>
     </div>    
-        <div id="Content">
+ 
