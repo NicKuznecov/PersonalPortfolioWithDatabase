@@ -4,6 +4,7 @@ Authors name: Nick Kuznecov
 Web-site name: Personal Portfolio
 File Description: 
 --> 
+        
         </div>
         </div>
         <div id ="mainContent">

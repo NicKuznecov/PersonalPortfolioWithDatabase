@@ -9,19 +9,20 @@ File Description: Business Contacts page of personal portfolio website.
 $page = "BusinessContacts";
 
 include('header.php');
+include('Content.php');
 include('ConnectVars.php');
 
-//if($_SESSION['signed_in'] == false)
-//{
-//	//the user is not signed in
+if($_SESSION['signed_in'] == false)
+{
+	//the user is not signed in
 	?>
          <script type="text/javascript">
-     //    alert("Sorry, you have to be signed in to view the Business Contacts page.");
-      //   history.back();
+         alert("Sorry, you have to be signed in to view the Business Contacts page.");
+         history.back();
          </script>  
         <?php
         
-//}
+}
         
 // Connect to the database
 $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);

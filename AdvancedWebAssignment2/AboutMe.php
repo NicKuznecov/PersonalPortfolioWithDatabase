@@ -9,6 +9,7 @@ File Description: About Me page of the Personal Portfolio web-site.
 $page = "AboutMe";
 
 include('header.php');
+include('Content.php');
 ?>
 
 

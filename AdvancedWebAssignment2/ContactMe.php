@@ -9,6 +9,7 @@ File Description: Contact me page of the Personal Portfolio web-site, for severa
 $page = "ContactMe";
 
 include('header.php');
+include('Content.php');
 ?>
             <h2>Contacting Me:</h2>
             <p>Email Address: Nickuznecov@gmail.com</br>Cell Phone #: 705-500-3646</br> </a>  </p>

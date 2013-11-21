@@ -9,6 +9,7 @@ File Description: Project page of the Personal Portfolio web-site, containing im
 $page = "Projects";
 
 include('header.php');
+include('Content.php');
 ?>
             <h2>Arma III Forum</h2>
             <p>The Arma III website is a project that I did for the "Intro to Web Programming" course in the Winter of 2013. The website included a forum, which required you to sign in to post a message, or post a topic, and required you to sign in as an administrator to create a category, and used a SQL database. </p>

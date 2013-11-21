@@ -7,6 +7,7 @@
   define('DB_NAME', 'db200231116');
 
 
+session_start();
 
 
 if(!mysql_connect(DB_HOST, DB_USER, DB_PASSWORD))

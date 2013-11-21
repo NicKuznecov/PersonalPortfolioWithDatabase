@@ -9,6 +9,9 @@ File Description: Home page of the Personal Portfolio web-site.
 $page = "Home";
 
 include('header.php');
+
+include('Content.php');
+
 ?>
 
             <h2>Hello, I'm Nick, a Programmer.</h2>
@@ -33,7 +36,7 @@ include('sideContent.php');
                 <h1> Call to Action </h1>
                 <form action="http://webdesign4.georgianc.on.ca/~200231116/Project1/Projects.php">
                 <input type ="submit" value="View More Work">
-
+                </form>
 
                 <h1> Keep Connected </h1>
 

@@ -9,7 +9,6 @@ File Description: footer of the Personal Portfolio web-site, includes the copyri
         <p>© Copyright 2013 by Kuznecov Industries Inc.
         </p>
         </div>
-    </div>
     <script type="text/javascript">
         $(window).load(function() {
             $('#featured').orbit();

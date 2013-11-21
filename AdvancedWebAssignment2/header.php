@@ -14,7 +14,7 @@ File Description: Header page which consists of the nav menu, and css/js include
 	<meta name="description" content="A short description." />
 	<meta name="keywords" content="put, keywords, here" />
 	<title>Personal Portfolio</title>
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="shortcut icon"  href="images/favicon.ico">
         <script src="javascript/jquery-1.5.1.min.js" type="text/javascript"></script>
         <script src="javascript/jquery.orbit-1.2.3.min.js" type="text/javascript"></script>
         <link rel="stylesheet" href="styles/styles.css" type="text/css">
@@ -52,4 +52,5 @@ File Description: Header page which consists of the nav menu, and css/js include
             <a id="BusinessContacts" class="item" href="BusinessContacts.php">Business Contacts</a>
             <a id="Login" class="item" href="Login.php">Login</a>
         </div>
-        <div id="content">
+    </div>    
+        <div id="Content">

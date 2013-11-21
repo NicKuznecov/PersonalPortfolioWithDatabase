@@ -9,6 +9,7 @@ File Description: Services page of the Personal Portfolio web-site, with service
 $page = "Services";
 
 include('header.php');
+include('Content.php');
 ?>
 
             <h2>Services</h2>   
