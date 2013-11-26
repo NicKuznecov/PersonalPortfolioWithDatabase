@@ -23,26 +23,42 @@ if($_SESSION['signed_in'] == false)
         <?php
         
 }
-        
+else
+{
 // Connect to the database
 $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
-$query = "SELECT contact_name, contact_email, contact_address, contact_homePhone, contact_workPhone FROM BusinessContacts ORDER BY contact_name ASC";
+//Select data from tables
+$query = "SELECT contact_name, contact_email, contact_address, contact_homePhone, contact_workPhone, contact_id FROM BusinessContacts ORDER BY contact_name ASC";
 $data = mysqli_query($dbc, $query);
 
     while ($row = mysqli_fetch_array($data))
     {     
         echo '<table>';
-        
-        echo '<tr><td class="label">Contact Name: ' . $row['contact_name'] . '</td></tr>';    
+        //echo the name of each contact
+        echo '<tr><td class="label">Contact Name: ' . $row['contact_name' ] . '</td></tr>';    
         
         echo '</table>';
+        
+        
+       
+        
 }
+echo '<a href="Logout.php">Log out</a>.';
+
 
   mysqli_close($dbc);
+}
 ?>
 
-
+<script type="text/javascript">
+//window.onload = function(){
+//   document.getElementById('send').onclick = function(e){
+  //     alert(document.getElementById("name").value);
+  //     return false;
+ //  }
+//}
+</script>
     
 <?php
 include('sideContent.php');

@@ -44,8 +44,7 @@ File Description: Mobile Page of the Personal Portfolio Website
   
 </head>
     <body>
-    <?php session_start() 
-    ?> 
+
         <!-- Home -->
         <div data-role="page" id="Home" >
             <div data-role="header" >
@@ -93,7 +92,7 @@ File Description: Mobile Page of the Personal Portfolio Website
             <div data-role="content">
                 <div id="images">
                     <!-- Set width of each image to 49% of the screen so they sit side by side -->
-                    <a href="#Projects" ><img src="images/projectsButton.jpg" width="49%" float ="left"/></a>
+                    <a href="#Projects" ><img src="images/projectsButton.jpg" width="49%" float="left"/></a>
                     <a href="#Services" ><img src="images/servicesButton.jpg" width="49%" float="right"/></a>
                 </div>
                 <!--JAVASCRIPT SLIDER-->
@@ -257,8 +256,8 @@ File Description: Mobile Page of the Personal Portfolio Website
                     <li>Cell Phone #: 705-500-3646</li>
                 </ul>
                 <h2>Social Media</h2>
-                <a href="https://twitter.com/NicKuznecov"><img src="images/twitterLogo.jpg" width="75" height="75" alt="twitter logo" rel="external"/></a>
-                <a href="https://facebook.com"><img src="images/facebookLogo.jpg" width="75" height="75" alt="facebook logo" rel="external" /></a>
+                <a href="https://twitter.com/NicKuznecov"><img src="images/twitterLogo.jpg" width="75" height="75" alt="twitter logo" /></a>
+                <a href="https://facebook.com"><img src="images/facebookLogo.jpg" width="75" height="75" alt="facebook logo"  /></a>
                 <a href="https://github.com/NicKuznecov"><img src="images/githubLogo.png" width="75" height="75" alt="github logo" /></a>
                 <a href="http://www.linkedin.com/pub/nick-kuznecov/84/716/196"> <img src="images/linkedinLogo.jpg" width ="75" height="75" alt="linkedin logo" /></a>
 
@@ -459,7 +458,7 @@ File Description: Mobile Page of the Personal Portfolio Website
                         </a>
                     </li>
                     <li>
-                        <a href="#BusinessContacts" data-transition="fade" data-theme="a" data-icon="info">
+                        <a href="#BusinessContacts" data-transition="fade" data-theme="a" data-icon="info" class="ui-btn-active ui-state-persist">
                             Business Contacts
                         </a>
                     </li>
@@ -481,18 +480,36 @@ File Description: Mobile Page of the Personal Portfolio Website
             <div id ="content">
             <?php
             
-            include('ConnectVars.php');
+            define('DB_HOST', 'webdesign4.georgianc.on.ca');
+            define('DB_USER', 'db200231116');      
+            define('DB_PASSWORD','23798');        
+            define('DB_NAME', 'db200231116');
+          
             
             
-            $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+          $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
 $query = "SELECT contact_name, contact_email, contact_address, contact_homePhone, contact_workPhone FROM BusinessContacts ORDER BY contact_name ASC";
+
 $data = mysqli_query($dbc, $query);
+
+//Alert Dialog to prevent user from accessing Business contacts page
+//if($_SESSION['signed_in'] == false)
+//{
+	//the user is not signed in
+//	
+     //    <script type="text/javascript">
+     //    alert("Sorry, you have to be signed in to view the Business Contacts page.");
+      //   history.back();
+      //   </script>  
+         
+//}
+
 
     while ($row = mysqli_fetch_array($data))
     {     
         echo '<table>';
-        
+        //Display contact names
         echo '<tr><td class="label">Contact Name: ' . $row['contact_name'] . '</td></tr>';    
         
         echo '</table>';
@@ -548,12 +565,12 @@ $data = mysqli_query($dbc, $query);
                         </a>
                     </li>
                     <li>
-                        <a href="#BusinessContacts" data-transition="fade" data-theme="a" data-icon="info">
+                        <a href="#BusinessContacts" data-transition="fade" data-theme="a" data-icon="info" >
                             Business Contacts
                         </a>
                     </li>
                     <li>
-                        <a href="#Login" data-transition="fade" data-theme="a" data-icon="plus">
+                        <a href="#Login" data-transition="fade" data-theme="a" data-icon="plus" class="ui-btn-active ui-state-persist">
                             Login
                         </a>
                     </li>
@@ -568,13 +585,21 @@ $data = mysqli_query($dbc, $query);
             <!-- START OF CONTENT -->
             <div data-role="content">
             <div id ="content">
-	
+                    
                 <?php
+                if(isset($_SESSION['signed_in']) && $_SESSION['signed_in'] == true)
+                {
+                        echo 'You are already signed in, you can <a href="Logout.php">log out</a> if you want.';
+                        
+                }
+                else
+                {
                 echo '<form method="post" action="">
 			Username: <input type="text" name="user_name" /></br>
 			Password: <input type="password" name="user_pass"></br>
 			<input type="submit" value="Log In" />
                       </form>';
+                }
                 ?>
             </div>
             </div>
@@ -593,6 +618,85 @@ $data = mysqli_query($dbc, $query);
             <!-- END OF FOOTER -->
         </div>
         <!-- END OF LOGIN PAGE -->
+        <!-- START OF LOGOUT PAGE -->
+        <div data-role="page" id="Logout">
+            <div data-theme="a" data-role="header">
+                <img id="logo" src="images/logo.png" alt="Logo" /> 
+                <div id="header">
+                <h3>Personal Portfolio</h3>
+                </div>
+            </div>
+            <!-- NAVBAR -->
+            <div data-role="navbar" data-iconpos="top">
+                <ul>
+                    <li>
+                        <a href="#Home" data-transition="fade" data-theme="a" data-icon="home">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#About" data-transition="fade" data-theme="a" data-icon="grid">
+                            About Me
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Contact" data-transition="fade" data-theme="a" data-icon="edit">
+                            Contact Me
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#BusinessContacts" data-transition="fade" data-theme="a" data-icon="info">
+                            Business Contacts
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Login" data-transition="fade" data-theme="a" data-icon="plus" class="ui-btn-active ui-state-persist">
+                            Login
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page1" data-transition="fade" data-theme="a" data-icon="back" data-rel="back">
+                            Back
+                        </a>
+                    </li>
+                </ul>
+             </div>
+            <!-- END OF NAVBAR -->
+            <!-- START OF CONTENT -->
+            <div data-role="content">
+            <div id ="content">
+                    
+                <?php
+                    if($_SESSION['signed_in'] == true)
+                    {
+                            //unset all variables
+                            $_SESSION['signed_in'] = NULL;
+                            $_SESSION['admin_username'] = NULL;
+
+                            echo 'Succesfully signed out.';
+
+                            header( 'Location: http://webdesign4.georgianc.on.ca/~200231116/AdvancedWebAssignment2/mobile.php#Home' ) ;
+                            close();
+
+                    }
+                ?>
+            </div>
+            </div>
+            <!-- END OF CONTENT -->
+            <!-- START OF FOOTER -->
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    Copyright © 2013
+                </h3>
+                <div id ="full">
+                    <a href="http://webdesign4.georgianc.on.ca/~200231116/Project1/Home.php" data-transition="fade" rel="external">
+                        Full Site
+                    </a>
+                </div>
+            </div>
+            <!-- END OF FOOTER -->
+        </div>
+        <!-- END OF LOGOUT PAGE -->
         <script defer src="javascript/jquery.flexslider.js"></script>
 
         <script type="text/javascript">

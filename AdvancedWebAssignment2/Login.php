@@ -13,6 +13,9 @@ include('Content.php');
 
 $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
+// LOGGING IN
+
+//if user already logged in, ask them if they want to log out
 if(isset($_SESSION['signed_in']) && $_SESSION['signed_in'] == true)
 {
 	echo 'You are already signed in, you can <a href="Logout.php">log out</a> if you want.';
@@ -21,7 +24,8 @@ else
 {	
     if($_SERVER['REQUEST_METHOD'] != 'POST')
 	{
-		echo '<form method="post" action="">
+                    //Login Form
+                    echo '<form method="post" action="">
 			Username: <input type="text" name="admin_username" /></br>
 			Password: <input type="password" name="admin_password"></br>
 			<input type="submit" value="Log In" />
@@ -53,7 +57,7 @@ else
                 }
 		else
 		{
-
+                        // Select username and password information from database
 			$query = "SELECT 
 						
 						admin_username,
@@ -74,22 +78,23 @@ else
 			}
 			else
 			{
-				
+				// if user information does not match, give error.
 				if(mysqli_num_rows($result) == 0)
 				{
 					echo 'You have supplied a wrong username/password combination.';
                                        
 				}
-				else
+				//Otherwise, sign the user in.
+                                else
 				{
-					//set the $_SESSION['signed_in'] variable to TRUE
+					//User is now signed in
 					$_SESSION['signed_in'] = true;
 					
 					while($row = mysqli_fetch_assoc($result))
 					{
 						$_SESSION['admin_username'] = $row['admin_username'];
 					}
-					
+					//Welcome Message
 					echo 'Welcome, ' . $_SESSION['admin_username'] . '. <a href="BusinessContacts.php">Proceed to the Business Contacts</a>.';
                                       
                                         

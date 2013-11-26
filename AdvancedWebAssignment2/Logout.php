@@ -1,8 +1,8 @@
 <!--
-File name: Login.php
+File name: Logout.php
 Authors name: Nick Kuznecov
 Web-site name: Personal Portfolio
-File Description: Login Page to gain access to the Business Contacts Page.
+File Description: Logout Page to close connection.
 -->
 
 <?php
@@ -13,7 +13,7 @@ include('Content.php');
 
 $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
-
+//If user is signed in, log out
 if($_SESSION['signed_in'] == true)
 {
 	//unset all variables
@@ -21,7 +21,13 @@ if($_SESSION['signed_in'] == true)
 	$_SESSION['admin_username'] = NULL;
 
 	echo 'Succesfully signed out.';
+        
+        header( 'Location: http://webdesign4.georgianc.on.ca/~200231116/AdvancedWebAssignment2/Home.php' ) ;
+        close();
+        
 }
+
+
 
 ?>
     
